@@ -1,0 +1,33 @@
+plugins { id 'fabric-loom' version '1.11.8'; id 'maven-publish' }
+version = '0.1.0'
+group = 'dev.hidenseek'
+base { archivesName = 'hidenseek' }
+repositories { mavenCentral() }
+dependencies {
+ minecraft 'com.mojang:minecraft:1.21.8'
+ mappings 'net.fabricmc:yarn:1.21.8+build.1:v2'
+ modImplementation 'net.fabricmc:fabric-loader:0.17.3'
+ modImplementation 'net.fabricmc.fabric-api:fabric-api:0.134.0+1.21.8'
+ testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+ testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+loom {
+ splitEnvironmentSourceSets()
+ mods { hidenseek { sourceSet sourceSets.main; sourceSet sourceSets.client } }
+ if (project.hasProperty('smoke')) { runs { server { vmArg '-Dstillhunt.smoke=true' } } }
+ runs { client { vmArg '-Xmx1500m'; runDir 'run-client'; if(project.hasProperty('uiCheck')) vmArg '-Dstillhunt.uiCheck=true' } }
+ runs {
+  server { vmArg '-Xmx1024m' }
+  seekerOne { client(); name 'Still Hunt seeker one'; runDir 'run-seeker-one'; programArgs '--username', 'SeekerOne', '--quickPlayMultiplayer', '127.0.0.1:25585'; vmArg '-Xmx1024m' }
+  seekerTwo { client(); name 'Still Hunt seeker two'; runDir 'run-seeker-two'; programArgs '--username', 'SeekerTwo', '--quickPlayMultiplayer', '127.0.0.1:25585'; vmArg '-Xmx1024m' }
+ }
+}
+java { toolchain.languageVersion = JavaLanguageVersion.of(21); withSourcesJar() }
+tasks.withType(JavaCompile).configureEach { options.release = 21; options.encoding = 'UTF-8' }
+test {
+ useJUnitPlatform()
+ // Core tests deliberately do not bootstrap Minecraft or its large platform classpath.
+ classpath = files(sourceSets.test.output, sourceSets.main.output,
+   configurations.testRuntimeClasspath.filter { it.name =~ /^(junit-|apiguardian-|opentest4j-|gson-)/ })
+ doFirst { systemProperties.remove('fabric.classPathGroups') }
+}
