@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "profile": [
+    "waiting_point",
+    "stone"
+  ],
+  "cards": {
+    "boots": {
+      "handler": "effect",
+      "rarity": 1,
+      "weight": 10,
+      "category": "heavy",
+      "durationSeconds": 60,
+      "names": {
+        "en_us": "Heavy boots",
+        "ru_ru": "Тяжёлые ботинки"
+      },
+      "parameters": {
+        "effect": "boots"
+      },
+      "requires": []
+    },
+    "rhythm": {
+      "handler": "effect",
+      "rarity": 1,
+      "weight": 10,
+      "category": "light",
+      "durationSeconds": 45,
+      "names": {
+        "en_us": "Broken rhythm",
+        "ru_ru": "Сбитый ритм"
+      },
+      "parameters": {
+        "effect": "rhythm"
+      },
+      "requires": []
+    },
+    "noise": {
+      "handler": "effect",
+      "rarity": 1,
+      "weight": 10,
+      "category": "light",
+      "durationSeconds": 45,
+      "names": {
+        "en_us": "Noisy hunter",
+        "ru_ru": "Шумный охотник"
+      },
+      "parameters": {
+        "effect": "noise"
+      },
+      "requires": []
+    },
+    "scavenge": {
+      "handler": "task",
+      "rarity": 1,
+      "weight": 10,
+      "category": "task",
+      "durationSeconds": 90,
+      "names": {
+        "en_us": "Quarry",
+        "ru_ru": "Каменоломня"
+      },
+      "parameters": {
+        "task": "quarry",
+        "effect": "scavenge"
+      },
+      "requires": [
+        "stone"
+      ]
+    },
+    "long_boots": {
+      "handler": "effect",
+      "rarity": 2,
+      "weight": 10,
+      "category": "heavy",
+      "durationSeconds": 120,
+      "names": {
+        "en_us": "Heavy march",
+        "ru_ru": "Тяжёлый марш"
+      },
+      "parameters": {
+        "effect": "boots"
+      },
+      "requires": []
+    },
+    "silence": {
+      "handler": "effect",
+      "rarity": 2,
+      "weight": 10,
+      "category": "access",
+      "durationSeconds": 30,
+      "names": {
+        "en_us": "Radio silence",
+        "ru_ru": "Радиомолчание"
+      },
+      "parameters": {
+        "effect": "silence"
+      },
+      "requires": []
+    },
+    "pilgrimage": {
+      "handler": "task",
+      "rarity": 2,
+      "weight": 10,
+      "category": "task",
+      "durationSeconds": 90,
+      "names": {
+        "en_us": "Pilgrimage",
+        "ru_ru": "Паломничество"
+      },
+      "parameters": {
+        "task": "return",
+        "effect": "pilgrimage"
+      },
+      "requires": [
+        "waiting_point"
+      ]
+    },
+    "rare_silence": {
+      "handler": "effect",
+      "rarity": 3,
+      "weight": 10,
+      "category": "access",
+      "durationSeconds": 45,
+      "names": {
+        "en_us": "Deep radio silence",
+        "ru_ru": "Глубокое радиомолчание"
+      },
+      "parameters": {
+        "effect": "silence"
+      },
+      "requires": []
+    },
+    "rare_boots": {
+      "handler": "effect",
+      "rarity": 3,
+      "weight": 10,
+      "category": "heavy",
+      "durationSeconds": 180,
+      "names": {
+        "en_us": "Long march",
+        "ru_ru": "Долгий марш"
+      },
+      "parameters": {
+        "effect": "boots"
+      },
+      "requires": []
+    },
+    "decoy": {
+      "handler": "decoy",
+      "rarity": 3,
+      "weight": 10,
+      "category": "decoy",
+      "durationSeconds": 60,
+      "names": {
+        "en_us": "False camp",
+        "ru_ru": "Ложный лагерь"
+      },
+      "parameters": {
+        "count": "1"
+      },
+      "requires": []
+    },
+    "quarantine": {
+      "handler": "effect",
+      "rarity": 4,
+      "weight": 10,
+      "category": "access",
+      "durationSeconds": 45,
+      "names": {
+        "en_us": "Tool quarantine",
+        "ru_ru": "Карантин инструментов"
+      },
+      "parameters": {
+        "effect": "quarantine"
+      },
+      "requires": []
+    },
+    "double_decoy": {
+      "handler": "decoy",
+      "rarity": 4,
+      "weight": 10,
+      "category": "decoy",
+      "durationSeconds": 90,
+      "names": {
+        "en_us": "Double legend",
+        "ru_ru": "Двойная легенда"
+      },
+      "parameters": {
+        "count": "2"
+      },
+      "requires": []
+    },
+    "exam": {
+      "handler": "effect",
+      "rarity": 4,
+      "weight": 10,
+      "category": "access",
+      "durationSeconds": 60,
+      "names": {
+        "en_us": "Final exam",
+        "ru_ru": "Последний экзамен"
+      },
+      "parameters": {
+        "effect": "exam"
+      },
+      "requires": []
+    }
+  },
+  "tasks": {
+    "quarry": {
+      "objective": "break_block",
+      "target": "minecraft:stone",
+      "count": 3,
+      "timeoutSeconds": 90,
+      "names": {
+        "en_us": "Quarry: mine 3 stone blocks",
+        "ru_ru": "Каменоломня: добудьте 3 каменных блока"
+      },
+      "requires": [
+        "stone"
+      ]
+    },
+    "return": {
+      "objective": "visit_waiting_point",
+      "target": "",
+      "count": 1,
+      "timeoutSeconds": 90,
+      "names": {
+        "en_us": "Pilgrimage: visit the waiting point",
+        "ru_ru": "Паломничество: вернитесь к точке ожидания"
+      },
+      "requires": [
+        "waiting_point"
+      ]
+    }
+  }
+}

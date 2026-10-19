@@ -1,0 +1,8 @@
+{
+ "schemaVersion": 1, "id": "hidenseek", "version": "0.1.0",
+ "name": "Still Hunt", "description": "Server-authoritative asymmetric hide and seek.",
+ "environment": "*", "license": "MIT",
+ "entrypoints": {"main": ["dev.hidenseek.StillHunt"], "client": ["dev.hidenseek.client.HuntClient"]},
+ "mixins": ["hidenseek.mixins.json", {"config":"hidenseek.client.mixins.json","environment":"client"}],
+ "depends": {"fabricloader": ">=0.17.3", "minecraft": "1.21.8", "java": ">=21", "fabric-api": "*"}
+}

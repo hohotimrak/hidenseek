@@ -1,0 +1,7 @@
+/function
+/help
+/hunt resume
+/hunt start
+/hunt start Player265
+/hunt start Player265 Player265
+/hunt start Player265 Player265 Player265

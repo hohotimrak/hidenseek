@@ -1,0 +1,60 @@
+{
+  "mappings": {
+    "dev/hidenseek/mixin/EntityMixin": {
+      "canAvoidTraps": "Lnet/minecraft/class_1297;method_5696()Z",
+      "isPushable": "Lnet/minecraft/class_1297;method_5810()Z",
+      "move": "Lnet/minecraft/class_1297;method_5784(Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V",
+      "setPosition(DDD)V": "Lnet/minecraft/class_1297;method_5814(DDD)V",
+      "setSprinting": "Lnet/minecraft/class_1297;method_5728(Z)V",
+      "setVelocity(Lnet/minecraft/util/math/Vec3d;)V": "Lnet/minecraft/class_1297;method_18799(Lnet/minecraft/class_243;)V"
+    },
+    "dev/hidenseek/mixin/InventoryMixin": {
+      "dropInventory": "Lnet/minecraft/class_1657;method_16078(Lnet/minecraft/class_3218;)V"
+    },
+    "dev/hidenseek/mixin/LivingMixin": {
+      "canGlide": "Lnet/minecraft/class_1309;method_63628()Z",
+      "isPushable": "Lnet/minecraft/class_1309;method_5810()Z",
+      "jump": "Lnet/minecraft/class_1309;method_6043()V",
+      "tickGliding": "Lnet/minecraft/class_1309;method_6053()V"
+    },
+    "dev/hidenseek/mixin/NetworkMixin": {
+      "Lnet/minecraft/network/NetworkThreadUtils;forceMainThread(Lnet/minecraft/network/packet/Packet;Lnet/minecraft/network/listener/PacketListener;Lnet/minecraft/server/world/ServerWorld;)V": "Lnet/minecraft/class_2600;method_11073(Lnet/minecraft/class_2596;Lnet/minecraft/class_2547;Lnet/minecraft/class_3218;)V",
+      "onPlayerMove": "Lnet/minecraft/class_3244;method_12063(Lnet/minecraft/class_2828;)V"
+    },
+    "dev/hidenseek/mixin/PlayerMixin": {
+      "copyFrom": "Lnet/minecraft/class_3222;method_14203(Lnet/minecraft/class_3222;Z)V",
+      "startRiding": "Lnet/minecraft/class_3222;method_5873(Lnet/minecraft/class_1297;Z)Z",
+      "teleportTo(Lnet/minecraft/world/TeleportTarget;)Lnet/minecraft/server/network/ServerPlayerEntity;": "Lnet/minecraft/class_3222;method_61275(Lnet/minecraft/class_5454;)Lnet/minecraft/class_3222;"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "dev/hidenseek/mixin/EntityMixin": {
+        "canAvoidTraps": "Lnet/minecraft/class_1297;method_5696()Z",
+        "isPushable": "Lnet/minecraft/class_1297;method_5810()Z",
+        "move": "Lnet/minecraft/class_1297;method_5784(Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V",
+        "setPosition(DDD)V": "Lnet/minecraft/class_1297;method_5814(DDD)V",
+        "setSprinting": "Lnet/minecraft/class_1297;method_5728(Z)V",
+        "setVelocity(Lnet/minecraft/util/math/Vec3d;)V": "Lnet/minecraft/class_1297;method_18799(Lnet/minecraft/class_243;)V"
+      },
+      "dev/hidenseek/mixin/InventoryMixin": {
+        "dropInventory": "Lnet/minecraft/class_1657;method_16078(Lnet/minecraft/class_3218;)V"
+      },
+      "dev/hidenseek/mixin/LivingMixin": {
+        "canGlide": "Lnet/minecraft/class_1309;method_63628()Z",
+        "isPushable": "Lnet/minecraft/class_1309;method_5810()Z",
+        "jump": "Lnet/minecraft/class_1309;method_6043()V",
+        "tickGliding": "Lnet/minecraft/class_1309;method_6053()V"
+      },
+      "dev/hidenseek/mixin/NetworkMixin": {
+        "Lnet/minecraft/network/NetworkThreadUtils;forceMainThread(Lnet/minecraft/network/packet/Packet;Lnet/minecraft/network/listener/PacketListener;Lnet/minecraft/server/world/ServerWorld;)V": "Lnet/minecraft/class_2600;method_11073(Lnet/minecraft/class_2596;Lnet/minecraft/class_2547;Lnet/minecraft/class_3218;)V",
+        "onPlayerMove": "Lnet/minecraft/class_3244;method_12063(Lnet/minecraft/class_2828;)V"
+      },
+      "dev/hidenseek/mixin/PlayerMixin": {
+        "copyFrom": "Lnet/minecraft/class_3222;method_14203(Lnet/minecraft/class_3222;Z)V",
+        "startRiding": "Lnet/minecraft/class_3222;method_5873(Lnet/minecraft/class_1297;Z)Z",
+        "teleportTo(Lnet/minecraft/world/TeleportTarget;)Lnet/minecraft/server/network/ServerPlayerEntity;": "Lnet/minecraft/class_3222;method_61275(Lnet/minecraft/class_5454;)Lnet/minecraft/class_3222;"
+      }
+    }
+  }
+}

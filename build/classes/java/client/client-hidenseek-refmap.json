@@ -1,0 +1,32 @@
+{
+  "mappings": {
+    "dev/hidenseek/client/mixin/ClientLivingMixin": {
+      "canGlide": "Lnet/minecraft/class_1309;method_63628()Z"
+    },
+    "dev/hidenseek/client/mixin/ClientPlayerMixin": {
+      "move": "Lnet/minecraft/class_746;method_5784(Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V"
+    },
+    "dev/hidenseek/client/mixin/InputMixin": {
+      "tick": "Lnet/minecraft/class_743;method_3129()V"
+    },
+    "dev/hidenseek/client/mixin/RenderMixin": {
+      "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "dev/hidenseek/client/mixin/ClientLivingMixin": {
+        "canGlide": "Lnet/minecraft/class_1309;method_63628()Z"
+      },
+      "dev/hidenseek/client/mixin/ClientPlayerMixin": {
+        "move": "Lnet/minecraft/class_746;method_5784(Lnet/minecraft/class_1313;Lnet/minecraft/class_243;)V"
+      },
+      "dev/hidenseek/client/mixin/InputMixin": {
+        "tick": "Lnet/minecraft/class_743;method_3129()V"
+      },
+      "dev/hidenseek/client/mixin/RenderMixin": {
+        "render": "Lnet/minecraft/class_757;method_3192(Lnet/minecraft/class_9779;Z)V"
+      }
+    }
+  }
+}

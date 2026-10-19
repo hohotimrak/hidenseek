@@ -1,0 +1,2 @@
+v1	named	intermediary
+FIELD	dev/hidenseek/mixin/NetworkMixin	Lnet/minecraft/server/network/ServerPlayerEntity;	player	field_14140

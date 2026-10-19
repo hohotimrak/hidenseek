@@ -1,0 +1,136 @@
+Initialized native services in: C:\Users\xCicada\.gradle\native
+Initialized jansi services in: C:\Users\xCicada\.gradle\native
+The client will now receive all logging from the daemon (pid: 27076). The daemon log file: C:\Users\xCicada\.gradle\daemon\8.14.3\daemon-27076.out.log
+Starting 3rd build in daemon [uptime: 1 mins 35.135 secs, performance: 98%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 16 worker leases.
+Now considering [D:\06_Хобби\hidenseek] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'D:\06_Хобби\hidenseek\settings.gradle'.
+Projects loaded. Root project using build file 'D:\06_Хобби\hidenseek\build.gradle'.
+Included projects: [root project 'hidenseek']
+
+> Configure project :
+Evaluating root project 'hidenseek' using build file 'D:\06_Хобби\hidenseek\build.gradle'.
+Resolved plugin [id: 'fabric-loom', version: '1.11.8']
+Resolved plugin [id: 'maven-publish']
+Fabric Loom: 1.11.8
+(kotlin.metadata.jvm.KotlinClassMetadata) with version (2.0.21-release-482) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-metadata-jvm/2.0.21/dd8294df485f71ba735d14173a286e3f3eef44f9/kotlin-metadata-jvm-2.0.21.jar)
+(org.objectweb.asm.ClassVisitor) with version (9.8) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.8/dc19ecb3f7889b7860697215cae99c0f9b6f6b4b/asm-9.8.jar)
+(org.objectweb.asm.tree.analysis.Analyzer) with version (9.8) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.8/b9747a320844b6cb1eacd90d8ecfd260a16c01d3/asm-analysis-9.8.jar)
+(org.objectweb.asm.commons.ClassRemapper) with version (9.8) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.8/36e4d212970388e5bd2c5180292012502df461bb/asm-commons-9.8.jar)
+(org.objectweb.asm.tree.ClassNode) with version (9.8) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.8/18419ca5b77a2f81097c741e7872e6ab8d2f40d/asm-tree-9.8.jar)
+(org.objectweb.asm.util.ASMifier) with version (9.8) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.8/395f1c1f035258511f27bc9b2583d76e4b143f59/asm-util-9.8.jar)
+(com.google.gson.Gson) with version (null) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10.1/b3add478d4382b78ea20b1671390a858002feb6c/gson-2.10.1.jar)
+(com.google.common.base.Preconditions) with version (null) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.0.0-jre/161ba27964a62f241533807a46b8711b13c1d94b/guava-33.0.0-jre.jar)
+(org.apache.commons.io.FileUtils) with version (2.15.1) was loaded from (/C:/Users/xCicada/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.15.1/f11560da189ab563a5c8e351941415430e9304ea/commons-io-2.15.1.jar)
+Using cached Minecraft jars
+:Extracting server jar from bootstrap
+:setting up loom dependencies
+Mod dependency options: {"__inlineRefmap__":false,"__mappings__":"net.fabricmc.yarn.1_21_8.1.21.8+build.1-v2"}
+Applying installer data from C:\Users\xCicada\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.17.3\deafaba5de4d9bbd76105783ff4e21ce0773874f\fabric-loader-0.17.3.jar
+Found another installer JSON in (C:\Users\xCicada\.gradle\caches\modules-2\files-2.1\net.fabricmc\fabric-loader\0.17.3\deafaba5de4d9bbd76105783ff4e21ce0773874f\fabric-loader-0.17.3.jar), ignoring
+Configuring compiler arguments for Java
+Adding mixin to classpath of AP config: clientAnnotationProcessor
+Adding mixin to classpath of AP config: annotationProcessor
+Adding mixin to classpath of AP config: testAnnotationProcessor
+All projects evaluated.
+Task name matched 'test'
+Selected primary task 'test' from project :
+Could not find refmap definition, will be using default name: hidenseek-refmap.json
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':compileClientJava', task ':processClientResources', task ':clientClasses', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test']
+Tasks that were excluded: []
+Resolve mutations for :compileJava (Thread[#514,Execution worker,5,main]) started.
+:compileJava (Thread[#526,Execution worker Thread 13,5,main]) started.
+
+> Task :compileJava
+Caching disabled for task ':compileJava' because:
+  Build cache is disabled
+Task ':compileJava' is not up-to-date because:
+  Input property 'stableSources' file D:\06_Хобби\hidenseek\src\main\java\dev\hidenseek\mixin\LivingMixin.java has changed.
+Compilation mode: in-process compilation
+Created classpath snapshot for incremental compilation in 0.038 secs.
+Full recompilation is required because org.spongepowered.tools.obfuscation.MixinObfuscationProcessorTargets is not incremental. Analysis took 0.075 secs.
+Compiling with toolchain 'C:\Program Files\Java\jdk-21.0.10'.
+Compiling with JDK Java compiler API.
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Class dependency analysis for incremental compilation took 0.021 secs.
+Resolve mutations for :processResources (Thread[#526,Execution worker Thread 13,5,main]) started.
+:processResources (Thread[#526,Execution worker Thread 13,5,main]) started.
+
+> Task :processResources UP-TO-DATE
+Caching disabled for task ':processResources' because:
+  Build cache is disabled
+  Not worth caching
+Skipping task ':processResources' as it is up-to-date.
+Resolve mutations for :classes (Thread[#526,Execution worker Thread 13,5,main]) started.
+:classes (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :classes
+Skipping task ':classes' as it has no actions.
+Resolve mutations for :compileClientJava (Thread[#525,Execution worker Thread 12,5,main]) started.
+:compileClientJava (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :compileClientJava UP-TO-DATE
+Caching disabled for task ':compileClientJava' because:
+  Build cache is disabled
+Skipping task ':compileClientJava' as it is up-to-date.
+Resolve mutations for :processClientResources (Thread[#525,Execution worker Thread 12,5,main]) started.
+:processClientResources (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :processClientResources NO-SOURCE
+Skipping task ':processClientResources' as it has no source files and no previous output files.
+Resolve mutations for :clientClasses (Thread[#525,Execution worker Thread 12,5,main]) started.
+:clientClasses (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :clientClasses UP-TO-DATE
+Skipping task ':clientClasses' as it has no actions.
+Resolve mutations for :compileTestJava (Thread[#525,Execution worker Thread 12,5,main]) started.
+:compileTestJava (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :compileTestJava UP-TO-DATE
+Caching disabled for task ':compileTestJava' because:
+  Build cache is disabled
+Skipping task ':compileTestJava' as it is up-to-date.
+Resolve mutations for :processTestResources (Thread[#525,Execution worker Thread 12,5,main]) started.
+:processTestResources (Thread[#525,Execution worker Thread 12,5,main]) started.
+
+> Task :processTestResources NO-SOURCE
+Skipping task ':processTestResources' as it has no source files and no previous output files.
+Resolve mutations for :testClasses (Thread[#516,Execution worker Thread 3,5,main]) started.
+:testClasses (Thread[#516,Execution worker Thread 3,5,main]) started.
+
+> Task :testClasses UP-TO-DATE
+Skipping task ':testClasses' as it has no actions.
+Resolve mutations for :test (Thread[#516,Execution worker Thread 3,5,main]) started.
+:test (Thread[#516,Execution worker Thread 3,5,main]) started.
+Gradle Test Executor 3 started executing tests.
+Gradle Test Executor 3 finished executing tests.
+
+> Task :test FAILED
+Caching disabled for task ':test' because:
+  Build cache is disabled
+Task ':test' is not up-to-date because:
+  Task has failed previously.
+Starting process 'Gradle Test Executor 3'. Working directory: D:\06_Хобби\hidenseek Command: C:\Program Files\Java\jdk-21.0.10\bin\java.exe -Dfabric.classPathGroups=D:\06_Хобби\hidenseek\build\classes\java\main;D:\06_Хобби\hidenseek\build\resources\main;D:\06_Хобби\hidenseek\build\classes\java\client;D:\06_Хобби\hidenseek\build\resources\client;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-block-view-api-v2-a5b452c0-common\1.0.31+946bf4c32c\fabric-block-view-api-v2-a5b452c0-common-1.0.31+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-block-view-api-v2-a5b452c0-client\1.0.31+946bf4c32c\fabric-block-view-api-v2-a5b452c0-client-1.0.31+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-command-api-v2-a5b452c0-common\2.3.1+52fff9ec2c\fabric-command-api-v2-a5b452c0-common-2.3.1+52fff9ec2c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-command-api-v2-a5b452c0-client\2.3.1+52fff9ec2c\fabric-command-api-v2-a5b452c0-client-2.3.1+52fff9ec2c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-data-attachment-api-v1-a5b452c0-common\1.8.13+38b5f74e2c\fabric-data-attachment-api-v1-a5b452c0-common-1.8.13+38b5f74e2c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-data-attachment-api-v1-a5b452c0-client\1.8.13+38b5f74e2c\fabric-data-attachment-api-v1-a5b452c0-client-1.8.13+38b5f74e2c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-data-generation-api-v1-a5b452c0-common\23.2.7+2e1c6d322c\fabric-data-generation-api-v1-a5b452c0-common-23.2.7+2e1c6d322c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-data-generation-api-v1-a5b452c0-client\23.2.7+2e1c6d322c\fabric-data-generation-api-v1-a5b452c0-client-23.2.7+2e1c6d322c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-events-interaction-v0-a5b452c0-common\4.0.25+946bf4c32c\fabric-events-interaction-v0-a5b452c0-common-4.0.25+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-events-interaction-v0-a5b452c0-client\4.0.25+946bf4c32c\fabric-events-interaction-v0-a5b452c0-client-4.0.25+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-game-rule-api-v1-a5b452c0-common\1.0.73+c64c9c5b2c\fabric-game-rule-api-v1-a5b452c0-common-1.0.73+c64c9c5b2c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-game-rule-api-v1-a5b452c0-client\1.0.73+c64c9c5b2c\fabric-game-rule-api-v1-a5b452c0-client-1.0.73+c64c9c5b2c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-item-api-v1-a5b452c0-common\11.5.0+02ce13f42c\fabric-item-api-v1-a5b452c0-common-11.5.0+02ce13f42c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-item-api-v1-a5b452c0-client\11.5.0+02ce13f42c\fabric-item-api-v1-a5b452c0-client-11.5.0+02ce13f42c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-item-group-api-v1-a5b452c0-common\4.2.14+c5f9bbc12c\fabric-item-group-api-v1-a5b452c0-common-4.2.14+c5f9bbc12c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-item-group-api-v1-a5b452c0-client\4.2.14+c5f9bbc12c\fabric-item-group-api-v1-a5b452c0-client-4.2.14+c5f9bbc12c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-lifecycle-events-v1-a5b452c0-common\2.6.4+db4dfd852c\fabric-lifecycle-events-v1-a5b452c0-common-2.6.4+db4dfd852c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-lifecycle-events-v1-a5b452c0-client\2.6.4+db4dfd852c\fabric-lifecycle-events-v1-a5b452c0-client-2.6.4+db4dfd852c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-message-api-v1-a5b452c0-common\6.1.2+946bf4c32c\fabric-message-api-v1-a5b452c0-common-6.1.2+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-message-api-v1-a5b452c0-client\6.1.2+946bf4c32c\fabric-message-api-v1-a5b452c0-client-6.1.2+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-networking-api-v1-a5b452c0-common\5.0.3+4ddbf91b2c\fabric-networking-api-v1-a5b452c0-common-5.0.3+4ddbf91b2c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-networking-api-v1-a5b452c0-client\5.0.3+4ddbf91b2c\fabric-networking-api-v1-a5b452c0-client-5.0.3+4ddbf91b2c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-object-builder-api-v1-a5b452c0-common\21.1.9+946bf4c32c\fabric-object-builder-api-v1-a5b452c0-common-21.1.9+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-object-builder-api-v1-a5b452c0-client\21.1.9+946bf4c32c\fabric-object-builder-api-v1-a5b452c0-client-21.1.9+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-particles-v1-a5b452c0-common\4.1.9+946bf4c32c\fabric-particles-v1-a5b452c0-common-4.1.9+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-particles-v1-a5b452c0-client\4.1.9+946bf4c32c\fabric-particles-v1-a5b452c0-client-4.1.9+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-recipe-api-v1-a5b452c0-common\8.1.16+946bf4c32c\fabric-recipe-api-v1-a5b452c0-common-8.1.16+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-recipe-api-v1-a5b452c0-client\8.1.16+946bf4c32c\fabric-recipe-api-v1-a5b452c0-client-8.1.16+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-registry-sync-v0-a5b452c0-common\6.1.29+946bf4c32c\fabric-registry-sync-v0-a5b452c0-common-6.1.29+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-registry-sync-v0-a5b452c0-client\6.1.29+946bf4c32c\fabric-registry-sync-v0-a5b452c0-client-6.1.29+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-rendering-fluids-v1-a5b452c0-common\3.1.31+fa6cb72b2c\fabric-rendering-fluids-v1-a5b452c0-common-3.1.31+fa6cb72b2c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-rendering-fluids-v1-a5b452c0-client\3.1.31+fa6cb72b2c\fabric-rendering-fluids-v1-a5b452c0-client-3.1.31+fa6cb72b2c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-resource-loader-v0-a5b452c0-common\3.1.12+020423442c\fabric-resource-loader-v0-a5b452c0-common-3.1.12+020423442c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-resource-loader-v0-a5b452c0-client\3.1.12+020423442c\fabric-resource-loader-v0-a5b452c0-client-3.1.12+020423442c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-screen-handler-api-v1-a5b452c0-common\1.3.138+946bf4c32c\fabric-screen-handler-api-v1-a5b452c0-common-1.3.138+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-screen-handler-api-v1-a5b452c0-client\1.3.138+946bf4c32c\fabric-screen-handler-api-v1-a5b452c0-client-1.3.138+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-tag-api-v1-a5b452c0-common\1.2.2+946bf4c32c\fabric-tag-api-v1-a5b452c0-common-1.2.2+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-tag-api-v1-a5b452c0-client\1.2.2+946bf4c32c\fabric-tag-api-v1-a5b452c0-client-1.2.2+946bf4c32c.jar;;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-transfer-api-v1-a5b452c0-common\6.0.6+946bf4c32c\fabric-transfer-api-v1-a5b452c0-common-6.0.6+946bf4c32c.jar;D:\06_Хобби\hidenseek\.gradle\loom-cache\remapped_mods\remapped\net\fabricmc\fabric-api\fabric-transfer-api-v1-a5b452c0-client\6.0.6+946bf4c32c\fabric-transfer-api-v1-a5b452c0-client-6.0.6+946bf4c32c.jar -Dorg.gradle.internal.worker.tmpdir=D:\06_Хобби\hidenseek\build\tmp\test\work @C:\Users\xCicada\.gradle\.tmp\gradle-worker-classpath5522384577224480622txt -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=RU -Duser.language=ru -Duser.variant -ea worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 3'
+Successfully started process 'Gradle Test Executor 3'
+Finished generating test XML results (0.003 secs) into: D:\06_Хобби\hidenseek\build\test-results\test
+Generating HTML test report...
+Finished generating test html results (0.006 secs) into: D:\06_Хобби\hidenseek\build\reports\tests\test
+
+[Incubating] Problems report is available at: file:///D:/06_%D0%A5%D0%BE%D0%B1%D0%B1%D0%B8/hidenseek/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///D:/06_%D0%A5%D0%BE%D0%B1%D0%B1%D0%B8/hidenseek/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights.
+
+BUILD FAILED in 9s
+5 actionable tasks: 2 executed, 3 up-to-date
+Watched directory hierarchies: [D:\06_Хобби\hidenseek]

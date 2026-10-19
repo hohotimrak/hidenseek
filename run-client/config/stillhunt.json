@@ -1,0 +1,64 @@
+{
+  "hidingSeconds": 120,
+  "seekingSeconds": 2700,
+  "disconnectSeconds": 120,
+  "initialIntel": 5,
+  "maxIntel": 15,
+  "regenSeconds": 45,
+  "finalRegenSeconds": 30,
+  "teamCooldown": 20,
+  "hintCooldown": 90,
+  "levelFiveCooldown": 360,
+  "areaCooldown": 180,
+  "costs": [
+    1,
+    2,
+    4,
+    6,
+    8
+  ],
+  "handLimit": 6,
+  "offerSeconds": 30,
+  "heavyImmunitySeconds": 45,
+  "blockRadius": 4,
+  "respawnSeconds": 10,
+  "challengeAtSeconds": [
+    480,
+    1200,
+    1920
+  ],
+  "challengeDurationSeconds": 90,
+  "flightSeconds": 12,
+  "arenaSize": 1024,
+  "minY": -64,
+  "maxY": 320,
+  "cellSize": 16,
+  "radii": [
+    64,
+    128,
+    256
+  ],
+  "blocks": [
+    "minecraft:stone",
+    "minecraft:dirt",
+    "minecraft:water",
+    "minecraft:oak_log"
+  ],
+  "tiers": {
+    "screenshot": 5,
+    "bearing": 5,
+    "east": 4,
+    "animal": 1,
+    "circle": 4,
+    "sector": 4,
+    "block": 3,
+    "biome": 4,
+    "above": 4,
+    "distance": 4,
+    "firework": 5,
+    "biome_is": 4,
+    "south": 4,
+    "rectangle": 4,
+    "structure": 4
+  }
+}
